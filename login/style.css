@@ -1,0 +1,79 @@
+body{
+    background-color: #f1f3f7;
+    color: #1e2746 ;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+/* Login/Signup Page */
+.loginPage, .signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+#loginform, #signupform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.input{
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 2px #90b0f1;
+    background-color: #f1f3f7;
+    font-family: "Ubuntu", sans-serif;
+    transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+input:hover{
+    transform: scale(1.1);
+}
+input:active{
+    border-color: #1e2746;
+}
+
+.button{
+    background-color: #1e2746;
+    color: #f1f3f7;
+    border-radius: 8px;
+    font-family: "Ubuntu", sans-serif;
+    width: 30%;
+    min-width: 80px;
+    height: 30px;
+    transition: box-shadow 0.3s;
+    transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+.button:hover{
+    color: #1e2746;
+    background-color: #f1f3f7;
+    transform: translate(5px, 5px);
+    box-shadow: 4px 4px 0 rgb(144, 176, 241, 0.9);   
+}
+
+
+.links{
+    text-decoration: none;
+    color: #315eb9;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    text-align: center;
+    font-size:12px;
+}
+
