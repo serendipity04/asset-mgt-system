@@ -13,11 +13,12 @@
     <div class="signup">
         <h1>Assets Management System</h1>
         <h3>Create an account</h3>
-        <form action="submit" id="signupform">
-            <input type="text" name="employeeName" id="employeeName" class="input" placeholder="Enter your Name">
-            <input type="text" name="role" id="" class="input" placeholder="Role(e.g., employee, HR, Manager)">
-            <input type="password" name="password" id="employeePW" class="input" placeholder="Password">
-            <a href="login.html"> <button type="submit" class="button">Sign Up</button></a>
+        <form name="signup" action="signup.php" id="signupform" method="post">
+            <input type="text" name="employeeName" id="employeeName" class="input" required placeholder="Enter your name... (Surname Firstname)">
+            <input type="text" name="email" id="" class="input" placeholder="Email..." required>
+            <input type="text" name="role" id="" class="input" required placeholder="Role... (e.g., employee, HR, Manager)">
+            <input type="password" name="password" id="employeePW" class="input" required placeholder="Password">
+            <a href="login.html"> <button type="submit" name="submit" class="button">Sign Up</button></a>
             <p>Have an account? <a href="login.html" class="links">Log In</a></p>
         </form>
     </div>
