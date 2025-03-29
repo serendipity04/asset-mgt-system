@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR Dashboard</title>
-    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="stylesheet" href="\app\static\css\dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -12,26 +12,26 @@
 </head>
 <body>
     <!-- sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logo"></div>
         <ul class="menu">
             <li>
-                <a href="" >
+                <a href="\app\templates\dashboard\hr\hrdashboard.html" >
                     <i class="fa-solid fa-user"></i><span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="\app\templates\dashboard\hr\hrRequestMgt.html">
                     <i class="fa-solid fa-bars-progress"></i><span>Requests</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="\app\templates\dashboard\hr\hrAssignedAssets.html">
                     <i class="fa-solid fa-list-check"></i><span>Assigned Assets</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="\app\templates\dashboard\hr\hrEmployeeMgt.html">
                     <i class="fa-solid fa-users-line"></i><span>Employees</span>
                 </a>
             </li>
