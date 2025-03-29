@@ -6,9 +6,15 @@ class Config:
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.googlemail.com')
     MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() in ['true', 'on', '1']
+    MAIL_USE_SSL = False
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', "rbpr xfbf ycds lije")
+    MAIL_SUBJECT_PREFIX = "[Flow Asset]"
+    APP_MAIL_SENDER = 'HR <hr@example.com>'
+    APP_HR = os.environ.get('APP_HR')
+    APP_MANAGER = os.environ.get('APP_MANAGER')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    #rbpr xfbf ycds lije
 
     @staticmethod
     def init_app(app):
