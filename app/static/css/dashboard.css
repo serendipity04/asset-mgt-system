@@ -5,6 +5,7 @@
     outline: none;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    
 }
 
 body{
@@ -46,7 +47,10 @@ body{
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
 }
-.menu li:hover, .menu li:active{
+.menu li:hover{
+    background-color: #90b0f1;
+}
+.menu li:active{
     background-color: #90b0f1;
 }
 .menu a {
@@ -163,7 +167,7 @@ button:hover{
 } */
 
 /* requests */
-.requestWrapper, .assetWrapper{
+.requestWrapper, .assetWrapper, .hrAsset{
     background-color: #fff;
     margin-top: 15px;
     padding: 15px;
@@ -182,11 +186,12 @@ a{
     color: #1e2746;
 }
 
-.requestTable{
+.requestTable, .record{
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 table{
@@ -197,14 +202,18 @@ table{
     padding: 10px;
     border-collapse: collapse;
 }
-
+h2{
+    color: #1e2746;
+}
 thead, tbody{
     border-radius: 8px;
+    color: #1e2746;
 }
 th, td{
     padding: 10px;
     text-align: center;
     border-radius: inherit;
+    color: #1e2746;
 }
 th{
     border-bottom: 1px solid #1e2746;
@@ -259,6 +268,23 @@ textarea{
     border-radius: 6px;
     padding: 10px;
     width: 80%;
+}
+
+
+.employeeRecord{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.record{
+    margin-top: none;
+}
+.requestTable{
+    width: auto;
+}
+
+.forwardbtn{
+    min-width: 25px;
 }
 
 @media (max-width: 480px) {
