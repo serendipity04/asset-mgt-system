@@ -128,9 +128,9 @@ body{
     text-align: center;
     height: 70%;
 }
-.cardBtn{
+/* .cardBtn{
 
-}
+} */
 
 button{
     background-color: #1e2746;
@@ -223,6 +223,42 @@ th{
 }
 .statusRow{
     width: 15%;
+}
+
+
+/*********** Request form  ***********/
+.requestForm{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    gap: 10px;
+    width: 100%;
+}
+
+.requestForm input{
+    border: 1px solid #1e2746;
+    border-radius: 6px;
+    width: 80%;   
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+select {
+    border: 1px solid #1e2746;
+    border-radius: 6px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 5px;
+}
+
+textarea{
+    border: 1px solid #1e2746;
+    border-radius: 6px;
+    padding: 10px;
+    width: 80%;
 }
 
 @media (max-width: 480px) {
