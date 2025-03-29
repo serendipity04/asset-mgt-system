@@ -6,7 +6,7 @@ body{
 }
 
 /* Login/Signup Page */
-.loginPage, .signup{
+.form_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,4 +76,3 @@ footer{
     text-align: center;
     font-size:12px;
 }
-
