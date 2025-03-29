@@ -21,11 +21,6 @@
                 </a>
             </li>
             <li>
-                <a href="\app\templates\dashboard\hr\hrRequestMgt.html">
-                    <i class="fa-solid fa-bars-progress"></i><span>Requests</span>
-                </a>
-            </li>
-            <li>
                 <a href="\app\templates\dashboard\hr\hrAssignedAssets.html">
                     <i class="fa-solid fa-list-check"></i><span>Assigned Assets</span>
                 </a>
@@ -47,26 +42,51 @@
     <div class="mainContent">
         <div class="headerWrapper">
             <div class="headerTitle">
-                <span>HR</span>
-                <h2>Dashboard</h2>
+                <h2> HR Dashboard</h2>
+
+                <!-- darkmode and mobile view sidebar toggle functionalitiy isn't working yet -->
+                <div>
+                <i class="fa-solid fa-bars" id="fa-bars"></i>
+                <i class="fa-solid fa-x" id="fa-x"></i>
+                <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+                </div>
             </div>
         </div>
+        <!-- requests -->
         <div class="cardContainer">
-            <div class="cardWrapper">
-                <div class="place-request-card">
-                    <div class="cardHeader">
-
-                    </div>
-                </div>
-                <div class="view-request-card">
-
-                </div>
-                <div class="view-assets-card">
-
-                </div>
-
+            <div class="requestTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="hrNameRow">Asset Name</th>
+                            <th class="employeeNameRow">Employee Name</th>
+                            <th class="hrQuantityRow">Quantity</th>
+                            <th class="hrDateRow">Request Date</th>
+                            <!-- if hr verifies, it goes to manager -->
+                            <th class="statusRow">Verify</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- a data row example  -->
+                        <!-- all tables need to be conected to the database to fill up with it's data  -->
+                        <tr>
+                            <td>Laptop</td>
+                            <td>Divine</td>
+                            <td>4</td>
+                            <td>29-Mar-2025</td>
+                            <!-- button to forward to manager -->
+                            <td><button class="forwardbtn">Forward</button></td>  
+                        </tr>
+                        <tr class="nodata">
+                            <td colspan="5">No data available</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+
+
+
     </div>
 </body>
 </html>
